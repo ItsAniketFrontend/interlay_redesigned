@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0e0e0c" />
+  <title>Studio — Interlay Interiors | Jaipur Luxury Interior Design</title>
+  <meta name="description" content="A close-knit Jaipur studio of designers, draftspeople and craftsmen — building interiors with patience, proportion and a quiet hand." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="about">
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <div class="loader__brand"><span class="loader__brand-text">studio</span></div>
+      <div class="loader__counter"><span id="loaderCount">0</span><span>%</span></div>
+      <div class="loader__bar"><span></span></div>
+    </div>
+    <div class="loader__curtain"></div>
+  </div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="noise"></div>
+
+  <div id="smooth-wrapper">
+
+    <!-- Nav -->
+    <header class="nav" id="nav">
+      <div class="container-fluid">
+        <div class="nav__inner">
+          <a href="index.html" class="nav__brand" data-cursor="hover" aria-label="Interlay Interiors — Home">
+            <img src="assets/images/logo.png" alt="Interlay Interiors" class="nav__brand-logo" />
+          </a>
+          <nav class="nav__menu d-none d-lg-flex">
+            <a href="work.html" class="nav__link" data-cursor="hover"><span>Work</span></a>
+
+            <div class="nav__dropdown-wrap">
+              <button type="button" class="nav__link nav__link--trigger" data-cursor="hover" aria-haspopup="true" aria-expanded="false">
+                <span>Services</span>
+                <i class="bi bi-chevron-down nav__caret"></i>
+              </button>
+              <div class="nav__dropdown" role="menu">
+                <a href="full-home-interiors.html" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
+                  <span>Full Home Interiors</span>
+                </a>
+                <div class="nav__dropdown-sub-wrap">
+                  <button type="button" class="nav__dropdown-link nav__dropdown-link--trigger" data-cursor="hover" aria-haspopup="true">
+                    <span>Modular Interiors</span>
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
+                  <div class="nav__dropdown nav__dropdown--sub" role="menu">
+                    <a href="index.html#services" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
+                      <span>Modular Kitchen</span>
+                    </a>
+                    <a href="index.html#services" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
+                      <span>Modular Wardrobe</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="index.html#process" class="nav__link" data-cursor="hover"><span>Process</span></a>
+            <a href="about.html" class="nav__link is-active" data-cursor="hover"><span>Studio</span></a>
+            <a href="contact.html" class="nav__link" data-cursor="hover"><span>Contact</span></a>
+          </nav>
+          <a href="contact.html" class="btn-magnetic d-none d-lg-inline-flex" data-cursor="hover">
+            <span class="btn-magnetic__inner">
+              <span class="btn-magnetic__text">Start a Project</span>
+              <span class="btn-magnetic__icon"><i class="bi bi-arrow-up-right"></i></span>
+            </span>
+          </a>
+          <button class="nav__toggle d-lg-none" id="navToggle" aria-label="Menu">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-menu__list">
+        <a href="work.html" class="mobile-menu__item">Work</a>
+        <div class="mobile-menu__group">
+          <button type="button" class="mobile-menu__item mobile-menu__item--toggle" data-mobile-toggle>
+            <span>Services</span>
+            <span class="mobile-menu__plus"></span>
+          </button>
+          <div class="mobile-menu__sub">
+            <a href="full-home-interiors.html" class="mobile-menu__sub-item">Full Home Interiors</a>
+            <a href="index.html#services" class="mobile-menu__sub-item">Modular Kitchen</a>
+            <a href="index.html#services" class="mobile-menu__sub-item">Modular Wardrobe</a>
+          </div>
+        </div>
+        <a href="index.html#process" class="mobile-menu__item">Process</a>
+        <a href="about.html" class="mobile-menu__item">Studio</a>
+        <a href="contact.html" class="mobile-menu__item">Contact</a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <p>hello@interlay.in</p>
+        <p>+91 96807 33040</p>
+      </div>
+    </div>
+
+    <main>
+
+      <!-- ===== PAGE HERO ===== -->
+      <section class="page-hero">
+        <div class="container-fluid">
+          <span class="page-hero__crumb">Interlay / Studio</span>
+          <h1 class="page-hero__title">
+            <span class="line"><span class="word">A small</span> <span class="word italic">studio</span></span>
+            <span class="line"><span class="word">in</span> <span class="word">old</span> <span class="word italic">Jaipur,</span></span>
+            <span class="line"><span class="word">building</span> <span class="word">quietly.</span></span>
+          </h1>
+          <div class="page-hero__meta">
+            <div>
+              <span class="cta__label">Founded</span>
+              <p>2018 — Jaipur, RJ</p>
+            </div>
+            <div>
+              <span class="cta__label">Team</span>
+              <p>Seven full-time<br/>designers &amp; craftspeople</p>
+            </div>
+            <div>
+              <span class="cta__label">Practice</span>
+              <p>Residential, commercial,<br/>hospitality, modular</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== MANIFESTO ===== -->
+      <section class="manifesto">
+        <div class="container-fluid">
+          <div class="row gx-5">
+            <div class="col-lg-3">
+              <span class="section-label" data-anim="fade">— Manifesto</span>
+            </div>
+            <div class="col-lg-9">
+              <p class="manifesto__lead" data-anim="lines">
+                We started Interlay because we were tired of <em class="serif-italic">loud</em> interiors. The kind that announce themselves on the way in, and have nothing left to say a year later. We believe rooms should reveal themselves <em class="serif-italic">slowly</em> — through proportion, light, and the small, patient details only the people who live there ever notice.
+              </p>
+
+              <div class="manifesto__cols">
+                <p data-anim="fade">Every project starts with a long, unhurried conversation. We don't pitch decks or trend boards. We listen — to how you cook, where the morning light falls, the chair your grandmother left behind — and design from there.</p>
+                <p data-anim="fade">We work with a tight circle of master joiners, stoneworkers and metal craftsmen. Most have been with us since the beginning. The work is slow on purpose. Our smallest project takes ten weeks; our largest, two years.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== STUDIO PHOTO ===== -->
+      <section class="studio-shot">
+        <div class="studio-shot__media">
+          <video class="studio-shot__video" autoplay muted loop playsinline preload="metadata" poster="new_images/about_hero_banner.jpg">
+            <source src="new_images/about.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="container-fluid">
+          <p class="studio-shot__caption" data-anim="fade">
+            <span class="serif-italic">Inside the studio —</span> Plot 14, C-Scheme. Sample boards, drafting tables, and a perpetual pot of chai.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== VALUES ===== -->
+      <section class="values" id="values">
+        <div class="container-fluid">
+          <div class="values__head">
+            <span class="section-label" data-anim="fade">— What we hold to</span>
+            <h2 class="values__title" data-anim="lines">
+              Four <em class="serif-italic">principles</em>,<br/>quietly held.
+            </h2>
+          </div>
+
+          <div class="values__grid">
+            <article class="value" data-anim="step">
+              <span class="value__num">01</span>
+              <h3 class="value__title">Patience over pace</h3>
+              <p>A room takes the time it takes. We'd rather miss a deadline by a week than ship a detail we'll regret for ten years.</p>
+            </article>
+            <article class="value" data-anim="step">
+              <span class="value__num">02</span>
+              <h3 class="value__title">Material honesty</h3>
+              <p>Stone is stone. Wood is wood. We avoid finishes that pretend to be something else, and let the material speak for itself.</p>
+            </article>
+            <article class="value" data-anim="step">
+              <span class="value__num">03</span>
+              <h3 class="value__title">Proportion first</h3>
+              <p>Before colour, before furniture, before mood — we get the proportion right. Everything else then becomes easier.</p>
+            </article>
+            <article class="value" data-anim="step">
+              <span class="value__num">04</span>
+              <h3 class="value__title">Quiet detail</h3>
+              <p>The 5mm reveal, the hidden hinge, the joinery that doesn't shout — this is where we spend the most time, and where the work lives.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TIMELINE ===== -->
+      <section class="timeline">
+        <div class="container-fluid">
+          <span class="section-label" data-anim="fade">— A short history</span>
+          <h2 class="timeline__title" data-anim="lines">
+            From a <em class="serif-italic">single</em> apartment to a <em class="serif-italic">studio</em> of seven.
+          </h2>
+
+          <div class="timeline__track">
+            <div class="timeline__item" data-anim="step">
+              <span class="timeline__year">2018</span>
+              <div>
+                <h4>The first apartment.</h4>
+                <p>Two designers and a borrowed drafting table. A 1,200 sq.ft. apartment in Bani Park — the project that started everything.</p>
+              </div>
+            </div>
+            <div class="timeline__item" data-anim="step">
+              <span class="timeline__year">2020</span>
+              <div>
+                <h4>The studio opens.</h4>
+                <p>We move into the C-Scheme studio, hire our first full-time draftsperson, and partner with our long-time joinery atelier.</p>
+              </div>
+            </div>
+            <div class="timeline__item" data-anim="step">
+              <span class="timeline__year">2022</span>
+              <div>
+                <h4>First commercial commission.</h4>
+                <p>Atelier Office in C-Scheme — a 4,000 sq.ft. workspace that taught us everything about acoustic, light and rhythm in commercial work.</p>
+              </div>
+            </div>
+            <div class="timeline__item" data-anim="step">
+              <span class="timeline__year">2024</span>
+              <div>
+                <h4>Modular line launches.</h4>
+                <p>Our in-house modular kitchen and wardrobe line begins production — built by the same craftsmen who detail our bespoke joinery.</p>
+              </div>
+            </div>
+            <div class="timeline__item" data-anim="step">
+              <span class="timeline__year">2026</span>
+              <div>
+                <h4>Today.</h4>
+                <p>Seven full-time, forty trusted partners, 120+ projects delivered. Still in C-Scheme. Still answering our own phone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TEAM ===== -->
+      <section class="team" id="team">
+        <div class="container-fluid">
+          <div class="team__head">
+            <span class="section-label" data-anim="fade">— The studio</span>
+            <h2 class="team__title" data-anim="lines">
+              The <em class="serif-italic">people</em><br/>behind the work.
+            </h2>
+          </div>
+
+          <div class="team__grid">
+            <article class="member" data-anim="step">
+              <div class="member__media">
+                <img src="new_images/sankiriti_gupta.webp" alt="Sankriti Gupta" />
+              </div>
+              <h3 class="member__name">Sankriti Gupta</h3>
+              <p class="member__role">Founder &amp; Principal Designer</p>
+            </article>
+            <article class="member" data-anim="step">
+              <div class="member__media">
+                <img src="new_images/pooja_jangid.webp" alt="Pooja Jangid" />
+              </div>
+              <h3 class="member__name">Pooja Jangid</h3>
+              <p class="member__role">Co-founder &amp; Project Director</p>
+            </article>
+            <article class="member" data-anim="step">
+              <div class="member__media">
+                <img src="new_images/nikhil_bothara.webp" alt="Nikhil Bothara" />
+              </div>
+              <h3 class="member__name">Nikhil Bothara</h3>
+              <p class="member__role">Senior Designer — Residential</p>
+            </article>
+            <article class="member" data-anim="step">
+              <div class="member__media">
+                <img src="new_images/pranav.png" alt="Pranav Sharma" />
+              </div>
+              <h3 class="member__name">Pranav Sharma</h3>
+              <p class="member__role">Senior Designer — Modular</p>
+            </article>
+            <article class="member" data-anim="step">
+              <div class="member__media">
+                <img src="new_images/ananya.png" alt="Ananya Iyer" />
+              </div>
+              <h3 class="member__name">Ananya Iyer</h3>
+              <p class="member__role">Material &amp; Sourcing Lead</p>
+            </article>
+            <article class="member" data-anim="step">
+              <div class="member__media">
+                <img src="new_images/amar.png" alt="Amar Singh" />
+              </div>
+              <h3 class="member__name">Amar Singh</h3>
+              <p class="member__role">Drafting &amp; 3D Visualisation</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== STUDIO GALLERY ===== -->
+      <section class="gallery">
+        <div class="container-fluid">
+          <span class="section-label" data-anim="fade">— Inside the studio</span>
+          <h2 class="gallery__title" data-anim="lines">
+            Material, <em class="serif-italic">light,</em><br/>and the daily mess of making.
+          </h2>
+        </div>
+
+        <div class="gallery__grid">
+          <figure class="gallery__item gallery__item--tall">
+            <img src="new_images/Interior_Designs/(20).jpg" alt="" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="new_images/Interior_Designs/(21).jpg" alt="" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="new_images/Interior_Designs/(22).jpg" alt="" />
+          </figure>
+          <figure class="gallery__item gallery__item--wide">
+            <img src="new_images/Interior_Designs/(24).jpg" alt="" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="new_images/Interior_Designs/(25).jpg" alt="" />
+          </figure>
+          <figure class="gallery__item gallery__item--tall">
+            <img src="new_images/Interior_Designs/(26).jpg" alt="" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===== PRESS / RECOGNITION ===== -->
+      <section class="press">
+        <div class="container-fluid">
+          <div class="row gx-5 align-items-end mb-5">
+            <div class="col-lg-7">
+              <span class="section-label" data-anim="fade">— Press &amp; recognition</span>
+              <h2 class="press__title" data-anim="lines">
+                Featured in publications<br/>we've long admired.
+              </h2>
+            </div>
+            <div class="col-lg-5">
+              <p class="press__lead" data-anim="fade">A small selection of features and conversations about the work, the craft, and the studio.</p>
+            </div>
+          </div>
+
+          <ul class="press__list">
+            <li class="press__row" data-anim="step">
+              <span class="press__org">AD India</span>
+              <span class="press__title-text">"The quiet rise of Jaipur's most patient studio"</span>
+              <span class="press__year">2025</span>
+              <span class="press__arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </li>
+            <li class="press__row" data-anim="step">
+              <span class="press__org">Beautiful Homes</span>
+              <span class="press__title-text">"Inside the Sandstone Residence"</span>
+              <span class="press__year">2024</span>
+              <span class="press__arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </li>
+            <li class="press__row" data-anim="step">
+              <span class="press__org">Elle Decor</span>
+              <span class="press__title-text">"Six designers reshaping Indian residential interiors"</span>
+              <span class="press__year">2024</span>
+              <span class="press__arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </li>
+            <li class="press__row" data-anim="step">
+              <span class="press__org">Architectural Digest</span>
+              <span class="press__title-text">"On material honesty — a conversation with Aisha Mehta"</span>
+              <span class="press__year">2023</span>
+              <span class="press__arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </li>
+            <li class="press__row" data-anim="step">
+              <span class="press__org">The Hindu</span>
+              <span class="press__title-text">"A studio that builds slowly, on purpose"</span>
+              <span class="press__year">2023</span>
+              <span class="press__arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== CTA ===== -->
+      <section class="cta">
+        <div class="container-fluid">
+          <span class="section-label" data-anim="fade">— Begin</span>
+          <h2 class="cta__title" data-anim="lines">
+            Have a space <br/>in <em class="serif-italic">mind?</em>
+          </h2>
+          <p class="cta__lead" data-anim="fade">Tell us about your home, your office, your café — or just the feeling you're chasing. We'll take it from there.</p>
+
+          <a href="contact.html" class="cta__mail" data-cursor="hover">
+            <span class="cta__mail-text">Start the conversation</span>
+            <span class="cta__mail-icon"><i class="bi bi-arrow-up-right"></i></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="footer__big">interlay</div>
+          <div class="footer__row">
+            <p>© 2026 Interlay Interiors. All rights reserved.</p>
+            <p>Crafted in Jaipur · Built with care</p>
+            <a href="#" data-cursor="hover" class="footer__top">Back to top <i class="bi bi-arrow-up"></i></a>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

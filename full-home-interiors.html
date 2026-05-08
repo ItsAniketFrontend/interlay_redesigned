@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0e0e0c" />
+  <title>Full Home Interior Designer in Jaipur — Interlay Interiors</title>
+  <meta name="description" content="Interlay Interiors — top-rated home interior designer in Jaipur, Rajasthan. Customized full home interiors, modular kitchens and wardrobes for your dream home." />
+
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="service">
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <div class="loader__brand"><span class="loader__brand-text">home</span></div>
+      <div class="loader__counter"><span id="loaderCount">0</span><span>%</span></div>
+      <div class="loader__bar"><span></span></div>
+    </div>
+    <div class="loader__curtain"></div>
+  </div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="noise"></div>
+
+  <div id="smooth-wrapper">
+
+    <!-- Nav -->
+    <header class="nav" id="nav">
+      <div class="container-fluid">
+        <div class="nav__inner">
+          <a href="index.html" class="nav__brand" data-cursor="hover" aria-label="Interlay Interiors — Home">
+            <img src="assets/images/logo.png" alt="Interlay Interiors" class="nav__brand-logo" />
+          </a>
+          <nav class="nav__menu d-none d-lg-flex">
+            <a href="work.html" class="nav__link" data-cursor="hover"><span>Work</span></a>
+
+            <div class="nav__dropdown-wrap">
+              <button type="button" class="nav__link nav__link--trigger is-active" data-cursor="hover" aria-haspopup="true" aria-expanded="false">
+                <span>Services</span>
+                <i class="bi bi-chevron-down nav__caret"></i>
+              </button>
+              <div class="nav__dropdown" role="menu">
+                <a href="full-home-interiors.html" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
+                  <span>Full Home Interiors</span>
+                </a>
+                <div class="nav__dropdown-sub-wrap">
+                  <button type="button" class="nav__dropdown-link nav__dropdown-link--trigger" data-cursor="hover" aria-haspopup="true">
+                    <span>Modular Interiors</span>
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
+                  <div class="nav__dropdown nav__dropdown--sub" role="menu">
+                    <a href="index.html#services" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
+                      <span>Modular Kitchen</span>
+                    </a>
+                    <a href="index.html#services" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
+                      <span>Modular Wardrobe</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="index.html#process" class="nav__link" data-cursor="hover"><span>Process</span></a>
+            <a href="about.html" class="nav__link" data-cursor="hover"><span>Studio</span></a>
+            <a href="contact.html" class="nav__link" data-cursor="hover"><span>Contact</span></a>
+          </nav>
+          <a href="contact.html" class="btn-magnetic d-none d-lg-inline-flex" data-cursor="hover">
+            <span class="btn-magnetic__inner">
+              <span class="btn-magnetic__text">Start a Project</span>
+              <span class="btn-magnetic__icon"><i class="bi bi-arrow-up-right"></i></span>
+            </span>
+          </a>
+          <button class="nav__toggle d-lg-none" id="navToggle" aria-label="Menu">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-menu__list">
+        <a href="work.html" class="mobile-menu__item">Work</a>
+        <div class="mobile-menu__group">
+          <button type="button" class="mobile-menu__item mobile-menu__item--toggle" data-mobile-toggle>
+            <span>Services</span>
+            <span class="mobile-menu__plus"></span>
+          </button>
+          <div class="mobile-menu__sub">
+            <a href="full-home-interiors.html" class="mobile-menu__sub-item">Full Home Interiors</a>
+            <a href="index.html#services" class="mobile-menu__sub-item">Modular Kitchen</a>
+            <a href="index.html#services" class="mobile-menu__sub-item">Modular Wardrobe</a>
+          </div>
+        </div>
+        <a href="index.html#process" class="mobile-menu__item">Process</a>
+        <a href="about.html" class="mobile-menu__item">Studio</a>
+        <a href="contact.html" class="mobile-menu__item">Contact</a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <p>hello@interlay.in</p>
+        <p>+91 96807 33040</p>
+      </div>
+    </div>
+
+    <main>
+
+      <!-- ===== HERO ===== -->
+      <section class="service-hero">
+        <div class="service-hero__bg">
+          <img src="new_images/full_home_interior_page_banner.png" alt="" />
+          <div class="service-hero__bg-overlay"></div>
+        </div>
+
+        <div class="container-fluid">
+          <span class="page-hero__crumb">Interlay / Services / Full Home Interiors</span>
+
+          <h1 class="service-hero__title">
+            <span class="line"><span class="word">Why stick to just a</span></span>
+            <span class="line"><span class="word italic">modular kitchen?</span></span>
+            <span class="line"><span class="word">When you can have a</span></span>
+            <span class="line"><span class="word">complete <em class="serif-italic">home makeover.</em></span></span>
+          </h1>
+
+          <div class="service-hero__intro">
+            <div class="service-hero__brand">
+              <span class="cta__label">Interlay Interiors</span>
+              <p class="service-hero__brand-text">Top Rated Home Interior Designer in Jaipur, Rajasthan</p>
+            </div>
+
+            <p class="service-hero__lead">
+              Transforming your house into a beautiful and comfortable home is a dream we share at Interlay Interiors. As the best home interior designer in Jaipur, we provide customized full home interior solutions, including the modular kitchens and wardrobes in Jaipur, to create a personalized living space for you and your loved ones.
+            </p>
+
+            <div class="service-hero__ctas">
+              <a href="tel:+919680733040" class="btn-magnetic" data-cursor="hover">
+                <span class="btn-magnetic__inner">
+                  <span class="btn-magnetic__text">Call Us</span>
+                  <span class="btn-magnetic__icon"><i class="bi bi-telephone-fill"></i></span>
+                </span>
+              </a>
+              <a href="contact.html" class="btn-magnetic btn-magnetic--ghost" data-cursor="hover">
+                <span class="btn-magnetic__inner">
+                  <span class="btn-magnetic__text">Write to Us</span>
+                  <span class="btn-magnetic__icon"><i class="bi bi-arrow-up-right"></i></span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CUSTOMIZED HOME INTERIOR ===== -->
+      <section class="service-block">
+        <div class="container-fluid">
+          <div class="row gx-5">
+            <div class="col-lg-4">
+              <span class="section-label" data-anim="fade">— Our practice</span>
+              <h2 class="service-block__title" data-anim="lines">
+                Customized Home Interior <em class="serif-italic">Designs</em> in Jaipur
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <div class="service-block__copy">
+                <p data-anim="fade">At Interlay Interiors we know that no two houses are the same and this is why we offer home interior services that are tailored to suit the owner's tastes. Our professional and committed team of designers will always meet your needs and expectations and will provide you with the ambience that you are looking for.</p>
+
+                <p data-anim="fade">We pay much attention to every aspect starting from the choice of the most suitable color scheme, furniture, accessories, decorations, and lights, and finally the accessories which blend very well. Thus, our interior designing services are not about following any pattern or design but it is about designing an interior space which is functional, warm and aesthetic.</p>
+
+                <p data-anim="fade">We at Interlay Interiors are proud to be the leading home interior designer in Jaipur offering the finest interior designing services. Hence, we aim at providing the best interior designing services and our main focus is to provide our clients with the best quality and sophistication in designs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== WHAT WE COVER ===== -->
+      <section class="coverage" id="coverage">
+        <div class="container-fluid">
+          <div class="coverage__head">
+            <span class="section-label" data-anim="fade">— Scope of work</span>
+            <h2 class="coverage__title" data-anim="lines">
+              What we cover in <em class="serif-italic">full home</em> interior
+            </h2>
+            <p class="coverage__lead" data-anim="fade">We take care of complete Interior Designing projects including designing, site visits, site supervision, brand and material selections, execution and completion. Choose our services as per your dream project's requirement.</p>
+          </div>
+
+          <div class="coverage__grid">
+
+            <article class="cov-card" data-anim="step" data-cursor="view">
+              <div class="cov-card__media">
+                <img src="new_images/Modular_Kitchen/AANAND%20JI/AANAND%20JI%20KITCHEN%20VIEW%2001.jpg" alt="Modular Kitchen" />
+              </div>
+              <div class="cov-card__body">
+                <span class="cov-card__num">01</span>
+                <h3 class="cov-card__title">Modular Kitchen</h3>
+                <span class="cov-card__arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
+            </article>
+
+            <article class="cov-card" data-anim="step" data-cursor="view">
+              <div class="cov-card__media">
+                <img src="new_images/WARDROBE_DESIGN/(1).jpg" alt="Modular Wardrobe" />
+              </div>
+              <div class="cov-card__body">
+                <span class="cov-card__num">02</span>
+                <h3 class="cov-card__title">Modular Wardrobe</h3>
+                <span class="cov-card__arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
+            </article>
+
+            <article class="cov-card" data-anim="step" data-cursor="view">
+              <div class="cov-card__media">
+                <img src="new_images/Interior_Designs/(1).jpg" alt="Living Room" />
+              </div>
+              <div class="cov-card__body">
+                <span class="cov-card__num">03</span>
+                <h3 class="cov-card__title">Living Room</h3>
+                <span class="cov-card__arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
+            </article>
+
+            <article class="cov-card" data-anim="step" data-cursor="view">
+              <div class="cov-card__media">
+                <img src="new_images/Interior_Designs/(6).jpg" alt="Bedroom" />
+              </div>
+              <div class="cov-card__body">
+                <span class="cov-card__num">04</span>
+                <h3 class="cov-card__title">Bedroom</h3>
+                <span class="cov-card__arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
+            </article>
+
+            <article class="cov-card" data-anim="step" data-cursor="view">
+              <div class="cov-card__media">
+                <img src="new_images/Interior_Designs/(15).jpg" alt="Dining Area" />
+              </div>
+              <div class="cov-card__body">
+                <span class="cov-card__num">05</span>
+                <h3 class="cov-card__title">Dining Area</h3>
+                <span class="cov-card__arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
+            </article>
+
+            <article class="cov-card" data-anim="step" data-cursor="view">
+              <div class="cov-card__media">
+                <img src="new_images/Interior_Designs/(20).jpg" alt="Pooja Room" />
+              </div>
+              <div class="cov-card__body">
+                <span class="cov-card__num">06</span>
+                <h3 class="cov-card__title">Pooja Room</h3>
+                <span class="cov-card__arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== GALLERY FEATURES (Wardrobe + Bedroom) ===== -->
+      <section class="feature-pair">
+
+        <article class="feature-pair__item">
+          <div class="feature-pair__media">
+            <img src="new_images/WARDROBE_DESIGN/(10).jpg" alt="Dressing Wardrobe Designs" />
+          </div>
+          <div class="container-fluid">
+            <div class="feature-pair__body">
+              <span class="section-label" data-anim="fade">— Gallery</span>
+              <h3 class="feature-pair__title" data-anim="lines">Dressing Wardrobe <em class="serif-italic">Designs</em></h3>
+              <p data-anim="fade">Browse our latest modular wardrobe design gallery!</p>
+              <div class="feature-pair__ctas">
+                <a href="work.html" class="btn-link" data-cursor="hover">
+                  <span>Read More</span><i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="contact.html" class="btn-magnetic btn-magnetic--small" data-cursor="hover">
+                  <span class="btn-magnetic__inner">
+                    <span class="btn-magnetic__text">Book Appointment</span>
+                    <span class="btn-magnetic__icon"><i class="bi bi-arrow-up-right"></i></span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-pair__item feature-pair__item--reverse">
+          <div class="feature-pair__media">
+            <img src="new_images/Interior_Designs/(30).jpg" alt="Bedroom Interior Designs" />
+          </div>
+          <div class="container-fluid">
+            <div class="feature-pair__body">
+              <span class="section-label" data-anim="fade">— Gallery</span>
+              <h3 class="feature-pair__title" data-anim="lines">Bedroom Interior <em class="serif-italic">Designs</em></h3>
+              <p data-anim="fade">Browse our latest bedroom design gallery!</p>
+              <div class="feature-pair__ctas">
+                <a href="work.html" class="btn-link" data-cursor="hover">
+                  <span>Read More</span><i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="contact.html" class="btn-magnetic btn-magnetic--small" data-cursor="hover">
+                  <span class="btn-magnetic__inner">
+                    <span class="btn-magnetic__text">Book Appointment</span>
+                    <span class="btn-magnetic__icon"><i class="bi bi-arrow-up-right"></i></span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- ===== BRAND PARTNERS ===== -->
+      <section class="brand-partners">
+        <div class="container-fluid">
+          <div class="brand-partners__head">
+            <span class="section-label" data-anim="fade">— Brand Partners</span>
+            <h2 class="brand-partners__title" data-anim="lines">Our top-notch brand partners help us to bring the <em class="serif-italic">quality products &amp; services</em> for you.</h2>
+          </div>
+        </div>
+
+        <div class="brand-partners__strip">
+          <div class="marquee" data-speed="0.35">
+            <div class="marquee__track marquee__track--brands">
+              <span class="brand-name">K KESSEBÖHMER</span><i>◆</i>
+              <span class="brand-name brand-name--lower">blum</span><i>◆</i>
+              <span class="brand-name">BOSCH</span><i>◆</i>
+              <span class="brand-name">HÄFELE</span><i>◆</i>
+              <span class="brand-name">CENTURYPLY</span><i>◆</i>
+              <span class="brand-name">SIEMENS</span><i>◆</i>
+              <span class="brand-name brand-name--lower">tesa</span><i>◆</i>
+              <span class="brand-name">K KESSEBÖHMER</span><i>◆</i>
+              <span class="brand-name brand-name--lower">blum</span><i>◆</i>
+              <span class="brand-name">BOSCH</span><i>◆</i>
+              <span class="brand-name">HÄFELE</span><i>◆</i>
+              <span class="brand-name">CENTURYPLY</span><i>◆</i>
+              <span class="brand-name">SIEMENS</span><i>◆</i>
+              <span class="brand-name brand-name--lower">tesa</span><i>◆</i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== WHY CHOOSE US ===== -->
+      <section class="why-us">
+        <div class="container-fluid">
+          <div class="why-us__head">
+            <span class="section-label" data-anim="fade">— Why us</span>
+            <h2 class="why-us__title" data-anim="lines">
+              Why Choose Interlay As <em class="serif-italic">Full Home</em> Interior Designer in Jaipur?
+            </h2>
+          </div>
+
+          <div class="why-us__grid">
+            <article class="why-card" data-anim="step">
+              <span class="why-card__num">01</span>
+              <h3 class="why-card__title">Proper Budgeting &amp; Planning</h3>
+              <p>Our professional team works on proper budgeting and planning before executing work. It helps to provide an overview of the plan budget.</p>
+            </article>
+            <article class="why-card" data-anim="step">
+              <span class="why-card__num">02</span>
+              <h3 class="why-card__title">Project Handover on Time</h3>
+              <p>With proper planning and execution, we are well known for our timely done projects. We assure to handover project on time.</p>
+            </article>
+            <article class="why-card" data-anim="step">
+              <span class="why-card__num">03</span>
+              <h3 class="why-card__title">Cost Effective</h3>
+              <p>With our budgeting and planning work we assure and determine to create our designs and architecture in a cost effective way.</p>
+            </article>
+            <article class="why-card" data-anim="step">
+              <span class="why-card__num">04</span>
+              <h3 class="why-card__title">Personal Involvement</h3>
+              <p>Our company's aim is to provide best services in industry and without personal involvement it couldn't be possible.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CTA BANNER ===== -->
+      <section class="cta-banner">
+        <div class="container-fluid">
+          <h2 class="cta-banner__title" data-anim="lines">
+            Looking For a <em class="serif-italic">Beautiful</em> Full Home Interior Designs?
+          </h2>
+          <a href="tel:+919680733040" class="cta-banner__btn" data-cursor="hover">
+            <span class="cta-banner__btn-icon"><i class="bi bi-telephone-fill"></i></span>
+            <span class="cta-banner__btn-text">
+              <span class="cta__label">Call now</span>
+              <span class="cta-banner__btn-num">+91 96807 33040</span>
+            </span>
+            <span class="cta-banner__btn-arrow"><i class="bi bi-arrow-up-right"></i></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===== FAQ ===== -->
+      <section class="faq">
+        <div class="container-fluid">
+          <div class="row gx-5">
+            <div class="col-lg-4">
+              <span class="section-label" data-anim="fade">— FAQ</span>
+              <h2 class="faq__title" data-anim="lines">
+                Frequently Asked <em class="serif-italic">Questions</em>
+              </h2>
+
+              <div class="faq__credential" data-anim="fade">
+                <h3 class="faq__credential-num"><span data-count="12">0</span>+ years</h3>
+                <p>Of service in the home interior designing industry.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-8">
+              <div class="accordion-list">
+
+                <div class="accordion-item-c" data-anim="step">
+                  <button class="accordion-toggle" data-cursor="hover">
+                    <span class="accordion-num">01</span>
+                    <span class="accordion-q">What services does Interlay Interiors offer as a home interior designer in Jaipur?</span>
+                    <span class="accordion-icon"><span></span><span></span></span>
+                  </button>
+                  <div class="accordion-body">
+                    <p>Interlay Interiors specializes in creating chic and customized interior designs to transform your space into a dream home. We offer a range of services, including complete home makeovers and the best modular kitchen solutions.</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item-c" data-anim="step">
+                  <button class="accordion-toggle" data-cursor="hover">
+                    <span class="accordion-num">02</span>
+                    <span class="accordion-q">How does Interlay Interiors create customized home interior designs in Jaipur?</span>
+                    <span class="accordion-icon"><span></span><span></span></span>
+                  </button>
+                  <div class="accordion-body">
+                    <p>We begin with a detailed consultation to understand your lifestyle, preferences, and space. Our designers then create customized concepts, 3D visualizations, and material selections tailored to bring your vision to life.</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item-c" data-anim="step">
+                  <button class="accordion-toggle" data-cursor="hover">
+                    <span class="accordion-num">03</span>
+                    <span class="accordion-q">What makes Interlay Interiors the best option for modular kitchen solutions in Jaipur?</span>
+                    <span class="accordion-icon"><span></span><span></span></span>
+                  </button>
+                  <div class="accordion-body">
+                    <p>Our modular kitchens combine premium materials, trusted global hardware partners (Blum, Häfele, Bosch), expert craftsmanship, and a fully customized layout — all delivered with end-to-end project management.</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item-c" data-anim="step">
+                  <button class="accordion-toggle" data-cursor="hover">
+                    <span class="accordion-num">04</span>
+                    <span class="accordion-q">How can I contact Interlay Interiors to start my home transformation journey in Jaipur?</span>
+                    <span class="accordion-icon"><span></span><span></span></span>
+                  </button>
+                  <div class="accordion-body">
+                    <p>You can reach us on +91 9680733040, write to us at hello@interlay.in, or simply fill out the contact form and we'll get back to you within 24 hours to schedule your consultation.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="footer__big">interlay</div>
+          <div class="footer__row">
+            <p>© 2026 Interlay Interiors. All rights reserved.</p>
+            <p>Crafted in Jaipur · Built with care</p>
+            <a href="#" data-cursor="hover" class="footer__top">Back to top <i class="bi bi-arrow-up"></i></a>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

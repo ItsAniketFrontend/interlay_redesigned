@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0e0e0c" />
+  <title>Selected Work — Interlay Interiors | Portfolio</title>
+  <meta name="description" content="A selection of recent residential, commercial and hospitality interiors by Interlay — Jaipur's quietest interior studio." />
+
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="work">
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <div class="loader__brand"><span class="loader__brand-text">work</span></div>
+      <div class="loader__counter"><span id="loaderCount">0</span><span>%</span></div>
+      <div class="loader__bar"><span></span></div>
+    </div>
+    <div class="loader__curtain"></div>
+  </div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="noise"></div>
+
+  <div id="smooth-wrapper">
+
+    <!-- Nav -->
+    <header class="nav" id="nav">
+      <div class="container-fluid">
+        <div class="nav__inner">
+          <a href="index.html" class="nav__brand" data-cursor="hover" aria-label="Interlay Interiors — Home">
+            <img src="assets/images/logo.png" alt="Interlay Interiors" class="nav__brand-logo" />
+          </a>
+          <nav class="nav__menu d-none d-lg-flex">
+            <a href="work.html" class="nav__link is-active" data-cursor="hover"><span>Work</span></a>
+
+            <div class="nav__dropdown-wrap">
+              <button type="button" class="nav__link nav__link--trigger" data-cursor="hover" aria-haspopup="true" aria-expanded="false">
+                <span>Services</span>
+                <i class="bi bi-chevron-down nav__caret"></i>
+              </button>
+              <div class="nav__dropdown" role="menu">
+                <a href="full-home-interiors.html" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
+                  <span>Full Home Interiors</span>
+                </a>
+                <div class="nav__dropdown-sub-wrap">
+                  <button type="button" class="nav__dropdown-link nav__dropdown-link--trigger" data-cursor="hover" aria-haspopup="true">
+                    <span>Modular Interiors</span>
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
+                  <div class="nav__dropdown nav__dropdown--sub" role="menu">
+                    <a href="index.html#services" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
+                      <span>Modular Kitchen</span>
+                    </a>
+                    <a href="index.html#services" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
+                      <span>Modular Wardrobe</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="index.html#process" class="nav__link" data-cursor="hover"><span>Process</span></a>
+            <a href="about.html" class="nav__link" data-cursor="hover"><span>Studio</span></a>
+            <a href="contact.html" class="nav__link" data-cursor="hover"><span>Contact</span></a>
+          </nav>
+          <a href="contact.html" class="btn-magnetic d-none d-lg-inline-flex" data-cursor="hover">
+            <span class="btn-magnetic__inner">
+              <span class="btn-magnetic__text">Start a Project</span>
+              <span class="btn-magnetic__icon"><i class="bi bi-arrow-up-right"></i></span>
+            </span>
+          </a>
+          <button class="nav__toggle d-lg-none" id="navToggle" aria-label="Menu">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-menu__list">
+        <a href="work.html" class="mobile-menu__item">Work</a>
+        <div class="mobile-menu__group">
+          <button type="button" class="mobile-menu__item mobile-menu__item--toggle" data-mobile-toggle>
+            <span>Services</span>
+            <span class="mobile-menu__plus"></span>
+          </button>
+          <div class="mobile-menu__sub">
+            <a href="full-home-interiors.html" class="mobile-menu__sub-item">Full Home Interiors</a>
+            <a href="index.html#services" class="mobile-menu__sub-item">Modular Kitchen</a>
+            <a href="index.html#services" class="mobile-menu__sub-item">Modular Wardrobe</a>
+          </div>
+        </div>
+        <a href="index.html#process" class="mobile-menu__item">Process</a>
+        <a href="about.html" class="mobile-menu__item">Studio</a>
+        <a href="contact.html" class="mobile-menu__item">Contact</a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <p>hello@interlay.in</p>
+        <p>+91 96807 33040</p>
+      </div>
+    </div>
+
+    <main>
+
+      <!-- ===== PAGE HERO ===== -->
+      <section class="page-hero work-hero">
+        <div class="container-fluid">
+          <span class="page-hero__crumb">Interlay / Selected work</span>
+          <h1 class="page-hero__title">
+            <span class="line"><span class="word">Recent</span> <span class="word italic">projects,</span></span>
+            <span class="line"><span class="word">quietly</span> <span class="word">considered.</span></span>
+          </h1>
+
+          <div class="work-hero__meta">
+            <div class="work-hero__meta-block">
+              <span class="cta__label">Archive</span>
+              <p class="work-hero__count">
+                <span data-count="120">0</span><span class="serif-italic">+</span>
+                <span class="work-hero__count-sub">delivered since 2018</span>
+              </p>
+            </div>
+            <div class="work-hero__meta-block">
+              <span class="cta__label">On view</span>
+              <p>Twelve recent works,<br/>across bedrooms, kitchens, living rooms,<br/>offices &amp; wardrobes.</p>
+            </div>
+            <div class="work-hero__meta-block">
+              <span class="cta__label">Geography</span>
+              <p>Jaipur · Delhi NCR<br/>Udaipur · Ahmedabad</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== STICKY FILTER BAR ===== -->
+      <div class="filter-bar" id="filterBar">
+        <div class="container-fluid">
+          <div class="filter-bar__inner">
+            <div class="filter-bar__list" id="filterChips">
+              <span class="filter-bar__label">Filter by</span>
+              <button class="filter-link is-active" data-filter="all" data-cursor="hover">
+                <span>All</span>
+              </button>
+              <button class="filter-link" data-filter="bedroom" data-cursor="hover">
+                <span>Bedroom</span>
+              </button>
+              <button class="filter-link" data-filter="kitchen" data-cursor="hover">
+                <span>Kitchen</span>
+              </button>
+              <button class="filter-link" data-filter="living-room" data-cursor="hover">
+                <span>Living Room</span>
+              </button>
+              <button class="filter-link" data-filter="office" data-cursor="hover">
+                <span>Office</span>
+              </button>
+              <button class="filter-link" data-filter="wardrobe" data-cursor="hover">
+                <span>Wardrobe</span>
+              </button>
+            </div>
+
+            <div class="view-toggle">
+              <button class="view-toggle__btn is-active" data-view="grid" data-cursor="hover" aria-label="Grid view">
+                <i class="bi bi-grid-3x3-gap-fill"></i>
+              </button>
+              <button class="view-toggle__btn" data-view="index" data-cursor="hover" aria-label="Index view">
+                <i class="bi bi-list-ul"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== PROJECTS GRID ===== -->
+      <section class="work-grid-section">
+        <div class="container-fluid">
+
+          <div class="work-grid" id="workGrid">
+
+            <a href="#" class="work-card work-card--feature" data-category="living-room" data-cursor="view">
+              <div class="work-card__media">
+                <img src="new_images/Interior_Designs/(1).jpg" alt="The Sandstone Residence" />
+              </div>
+              <div class="work-card__overlay"></div>
+              <div class="work-card__info">
+                <div class="work-card__top">
+                  <span class="work-card__cat">Living Room</span>
+                  <span class="work-card__year">2024</span>
+                </div>
+                <h3 class="work-card__title">The Sandstone Residence</h3>
+                <div class="work-card__bottom">
+                  <span class="work-card__loc">Civil Lines, Jaipur</span>
+                  <span class="work-card__area">4,200 sq.ft.</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="work-card work-card--default" data-category="bedroom" data-cursor="view">
+              <div class="work-card__media">
+                <img src="new_images/Interior_Designs/(6).jpg" alt="Maison Lumière" />
+              </div>
+              <div class="work-card__overlay"></div>
+              <div class="work-card__info">
+                <div class="work-card__top">
+                  <span class="work-card__cat">Bedroom</span>
+                  <span class="work-card__year">2024</span>
+                </div>
+                <h3 class="work-card__title">Maison Lumière</h3>
+                <div class="work-card__bottom">
+                  <span class="work-card__loc">Vaishali Nagar</span>
+                  <span class="work-card__area">3,800 sq.ft.</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="work-card work-card--default" data-category="office" data-cursor="view">
+              <div class="work-card__media">
+                <img src="new_images/Interior_Designs/(7).jpg" alt="Atelier Office" />
+              </div>
+              <div class="work-card__overlay"></div>
+              <div class="work-card__info">
+                <div class="work-card__top">
+                  <span class="work-card__cat">Office</span>
+                  <span class="work-card__year">2023</span>
+                </div>
+                <h3 class="work-card__title">Atelier Office</h3>
+                <div class="work-card__bottom">
+                  <span class="work-card__loc">C-Scheme</span>
+                  <span class="work-card__area">4,000 sq.ft.</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="work-card work-card--wide" data-category="living-room" data-cursor="view">
+              <div class="work-card__media">
+                <img src="new_images/Interior_Designs/(8).jpg" alt="Villa Marigold" />
+              </div>
+              <div class="work-card__overlay"></div>
+              <div class="work-card__info">
+                <div class="work-card__top">
+                  <span class="work-card__cat">Living Room</span>
+                  <span class="work-card__year">2025</span>
+                </div>
+                <h3 class="work-card__title">Villa Marigold</h3>
+                <div class="work-card__bottom">
+                  <span class="work-card__loc">Mansarovar</span>
+                  <span class="work-card__area">6,500 sq.ft.</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="work-card work-card--default" data-category="kitchen" data-cursor="view">
+              <div class="work-card__media">
+                <img src="new_images/Modular_Kitchen/AANAND%20JI/AANAND%20JI%20KITCHEN%20VIEW%2001.jpg" alt="Kitchen No. 7" />
+              </div>
+              <div class="work-card__overlay"></div>
+              <div class="work-card__info">
+                <div class="work-card__top">
+                  <span class="work-card__cat">Kitchen</span>
+                  <span class="work-card__year">2024</span>
+                </div>
+                <h3 class="work-card__title">Kitchen №7</h3>
+                <div class="work-card__bottom">
+                  <span class="work-card__loc">Jagatpura</span>
+                  <span class="work-card__area">280 sq.ft.</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="work-card work-card--default" data-category="wardrobe" data-cursor="view">
+              <div class="work-card__media">
+                <img src="new_images/WARDROBE_DESIGN/(1).jpg" alt="The Wardrobe Wall" />
+              </div>
+              <div class="work-card__overlay"></div>
+              <div class="work-card__info">
+                <div class="work-card__top">
+                  <span class="work-card__cat">Wardrobe</span>
+                  <span class="work-card__year">2023</span>
+                </div>
+                <h3 class="work-card__title">The Wardrobe Wall</h3>
+                <div class="work-card__bottom">
+                  <span class="work-card__loc">Malviya Nagar</span>
+                  <span class="work-card__area">90 sq.ft.</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="work-card work-card--default" data-category="bedroom" data-cursor="view">
+              <div class="work-card__media">
+                <img src="new_images/Interior_Designs/(9).jpg" alt="Indigo Apartment" />
+              </div>
+              <div class="work-card__overlay"></div>
+              <div class="work-card__info">
+                <div class="work-card__top">
+                  <span class="work-card__cat">Bedroom</span>
+                  <span class="work-card__year">2025</span>
+                </div>
+                <h3 class="work-card__title">Indigo Apartment</h3>
+                <div class="work-card__bottom">
+                  <span class="work-card__loc">Tonk Road</span>
+                  <span class="work-card__area">2,100 sq.ft.</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="work-card work-card--tall" data-category="kitchen" data-cursor="view">
+              <div class="work-card__media">
+                <img src="new_images/Modular_Kitchen/SHIKHA%20JI/SHIKHA%20JI%20KITCHEN%20VIEW%2001.jpg" alt="Stone & Oak Kitchen" />
+              </div>
+              <div class="work-card__overlay"></div>
+              <div class="work-card__info">
+                <div class="work-card__top">
+                  <span class="work-card__cat">Kitchen</span>
+                  <span class="work-card__year">2025</span>
+                </div>
+                <h3 class="work-card__title">Stone &amp; Oak Kitchen</h3>
+                <div class="work-card__bottom">
+                  <span class="work-card__loc">Vidhyadhar Nagar</span>
+                  <span class="work-card__area">320 sq.ft.</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="work-card work-card--default" data-category="living-room" data-cursor="view">
+              <div class="work-card__media">
+                <img src="new_images/Interior_Designs/(10).jpg" alt="The Reading Room" />
+              </div>
+              <div class="work-card__overlay"></div>
+              <div class="work-card__info">
+                <div class="work-card__top">
+                  <span class="work-card__cat">Living Room</span>
+                  <span class="work-card__year">2023</span>
+                </div>
+                <h3 class="work-card__title">The Reading Room</h3>
+                <div class="work-card__bottom">
+                  <span class="work-card__loc">Civil Lines</span>
+                  <span class="work-card__area">850 sq.ft.</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="work-card work-card--compact" data-category="wardrobe" data-cursor="view">
+              <div class="work-card__media">
+                <img src="new_images/WARDROBE_DESIGN/(5).jpg" alt="Capsule Wardrobe" />
+              </div>
+              <div class="work-card__overlay"></div>
+              <div class="work-card__info">
+                <div class="work-card__top">
+                  <span class="work-card__cat">Wardrobe</span>
+                  <span class="work-card__year">2024</span>
+                </div>
+                <h3 class="work-card__title">Capsule Wardrobe</h3>
+                <div class="work-card__bottom">
+                  <span class="work-card__loc">Raja Park</span>
+                  <span class="work-card__area">110 sq.ft.</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="work-card work-card--wide" data-category="office" data-cursor="view">
+              <div class="work-card__media">
+                <img src="new_images/Interior_Designs/(11).jpg" alt="North Star Office" />
+              </div>
+              <div class="work-card__overlay"></div>
+              <div class="work-card__info">
+                <div class="work-card__top">
+                  <span class="work-card__cat">Office</span>
+                  <span class="work-card__year">2024</span>
+                </div>
+                <h3 class="work-card__title">North Star Office</h3>
+                <div class="work-card__bottom">
+                  <span class="work-card__loc">Sitapura</span>
+                  <span class="work-card__area">5,200 sq.ft.</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="work-card work-card--default" data-category="kitchen" data-cursor="view">
+              <div class="work-card__media">
+                <img src="new_images/Modular_Kitchen/MUKESH%20BHAKAR%20JI/VIEW%2001.jpg" alt="The Marble Pantry" />
+              </div>
+              <div class="work-card__overlay"></div>
+              <div class="work-card__info">
+                <div class="work-card__top">
+                  <span class="work-card__cat">Kitchen</span>
+                  <span class="work-card__year">2023</span>
+                </div>
+                <h3 class="work-card__title">The Marble Pantry</h3>
+                <div class="work-card__bottom">
+                  <span class="work-card__loc">C-Scheme</span>
+                  <span class="work-card__area">380 sq.ft.</span>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Empty state for filter -->
+          <div class="work-empty" id="workEmpty">
+            <span class="serif-italic">Nothing here</span>
+            <p>No projects match this filter — yet. Try another category, or get in touch about a brief like this.</p>
+            <a href="contact.html" class="btn-link" data-cursor="hover">
+              <span>Start a brief</span><i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== INDEX VIEW (alternate) ===== -->
+      <section class="work-index-section" id="workIndex">
+        <div class="container-fluid">
+          <ul class="work-index" id="workIndexList">
+            <!-- populated from grid by JS -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== CTA ===== -->
+      <section class="cta">
+        <div class="container-fluid">
+          <span class="section-label" data-anim="fade">— Begin</span>
+          <h2 class="cta__title" data-anim="lines">
+            Have a space <br/>in <em class="serif-italic">mind?</em>
+          </h2>
+          <p class="cta__lead" data-anim="fade">If anything here feels close to what you're after — or, just as often, the opposite — we'd love to hear about it.</p>
+
+          <a href="contact.html" class="cta__mail" data-cursor="hover">
+            <span class="cta__mail-text">Start the conversation</span>
+            <span class="cta__mail-icon"><i class="bi bi-arrow-up-right"></i></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="footer__big">interlay</div>
+          <div class="footer__row">
+            <p>© 2026 Interlay Interiors. All rights reserved.</p>
+            <p>Crafted in Jaipur · Built with care</p>
+            <a href="#" data-cursor="hover" class="footer__top">Back to top <i class="bi bi-arrow-up"></i></a>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

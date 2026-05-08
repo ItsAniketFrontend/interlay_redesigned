@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0e0e0c" />
+  <title>Interlay — Designing Spaces That Inspire | Luxury Interior Design Jaipur</title>
+  <meta name="description" content="Interlay is a Jaipur-based luxury interior design studio crafting bespoke residential and commercial spaces with timeless elegance and modern soul." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/logo.png" />
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== PAGE LOADER ===== -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <div class="loader__brand">
+        <span class="loader__brand-text">interlay</span>
+      </div>
+      <div class="loader__counter">
+        <span id="loaderCount">0</span><span>%</span>
+      </div>
+      <div class="loader__bar"><span></span></div>
+    </div>
+    <div class="loader__curtain"></div>
+  </div>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ===== NOISE OVERLAY ===== -->
+  <div class="noise"></div>
+
+  <!-- ===== SCROLL CONTAINER ===== -->
+  <div id="smooth-wrapper">
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="nav" id="nav">
+      <div class="container-fluid">
+        <div class="nav__inner">
+          <a href="index.html" class="nav__brand" data-cursor="hover" aria-label="Interlay Interiors — Home">
+            <img src="assets/images/logo.png" alt="Interlay Interiors" class="nav__brand-logo" />
+          </a>
+
+          <nav class="nav__menu d-none d-lg-flex">
+            <a href="work.html" class="nav__link" data-cursor="hover"><span>Work</span></a>
+
+            <div class="nav__dropdown-wrap">
+              <button type="button" class="nav__link nav__link--trigger" data-cursor="hover" aria-haspopup="true" aria-expanded="false">
+                <span>Services</span>
+                <i class="bi bi-chevron-down nav__caret"></i>
+              </button>
+              <div class="nav__dropdown" role="menu">
+                <a href="full-home-interiors.html" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
+                  <span>Full Home Interiors</span>
+                </a>
+                <div class="nav__dropdown-sub-wrap">
+                  <button type="button" class="nav__dropdown-link nav__dropdown-link--trigger" data-cursor="hover" aria-haspopup="true">
+                    <span>Modular Interiors</span>
+                    <i class="bi bi-chevron-right"></i>
+                  </button>
+                  <div class="nav__dropdown nav__dropdown--sub" role="menu">
+                    <a href="#services" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
+                      <span>Modular Kitchen</span>
+                    </a>
+                    <a href="#services" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
+                      <span>Modular Wardrobe</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#process" class="nav__link" data-cursor="hover"><span>Process</span></a>
+            <a href="about.html" class="nav__link" data-cursor="hover"><span>Studio</span></a>
+            <a href="contact.html" class="nav__link" data-cursor="hover"><span>Contact</span></a>
+          </nav>
+
+          <a href="contact.html" class="btn-magnetic d-none d-lg-inline-flex" data-cursor="hover">
+            <span class="btn-magnetic__inner">
+              <span class="btn-magnetic__text">Start a Project</span>
+              <span class="btn-magnetic__icon"><i class="bi bi-arrow-up-right"></i></span>
+            </span>
+          </a>
+
+          <button class="nav__toggle d-lg-none" id="navToggle" aria-label="Menu">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-menu__list">
+        <a href="work.html" class="mobile-menu__item">Work</a>
+        <div class="mobile-menu__group">
+          <button type="button" class="mobile-menu__item mobile-menu__item--toggle" data-mobile-toggle>
+            <span>Services</span>
+            <span class="mobile-menu__plus"></span>
+          </button>
+          <div class="mobile-menu__sub">
+            <a href="full-home-interiors.html" class="mobile-menu__sub-item">Full Home Interiors</a>
+            <a href="#services" class="mobile-menu__sub-item">Modular Kitchen</a>
+            <a href="#services" class="mobile-menu__sub-item">Modular Wardrobe</a>
+          </div>
+        </div>
+        <a href="#process" class="mobile-menu__item">Process</a>
+        <a href="about.html" class="mobile-menu__item">Studio</a>
+        <a href="contact.html" class="mobile-menu__item">Contact</a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <p>hello@interlay.in</p>
+        <p>+91 96807 33040</p>
+      </div>
+    </div>
+
+    <main>
+
+      <!-- ===== HERO ===== -->
+      <section class="hero" id="hero">
+        <div class="hero__bg">
+          <img src="new_images/banner-1.webp" alt="Interlay Interiors — luxury residential design" />
+          <div class="hero__bg-overlay"></div>
+        </div>
+
+        <div class="container-fluid h-100">
+          <div class="hero__inner">
+            <div class="hero__eyebrow">
+              <span class="dot"></span>
+              <span class="hero__eyebrow-text">Jaipur — est. 2018</span>
+            </div>
+
+            <h1 class="hero__title">
+              <span class="line"><span class="word">Designing</span></span>
+              <span class="line"><span class="word italic">spaces</span> <span class="word">that</span></span>
+              <span class="line"><span class="word">inspire <em>&</em> endure.</span></span>
+            </h1>
+
+            <div class="hero__meta">
+              <div class="hero__meta-block">
+                <span class="hero__meta-label">Studio</span>
+                <p class="hero__meta-text">A Jaipur-rooted interior design practice shaping homes, offices and hospitality interiors with a quiet, considered hand.</p>
+              </div>
+
+              <div class="hero__meta-block">
+                <span class="hero__meta-label">Scroll</span>
+                <div class="hero__scroll">
+                  <div class="hero__scroll-line"><span></span></div>
+                  <span class="hero__scroll-text">Begin</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__marquee">
+              <div class="marquee" data-speed="0.4">
+                <div class="marquee__track">
+                  <span>Full Home Interiors</span><i>◆</i>
+                  <span>Modular Kitchen</span><i>◆</i>
+                  <span>Modular Wardrobe</span><i>◆</i>
+                  <span>Turnkey Execution</span><i>◆</i>
+                  <span>Full Home Interiors</span><i>◆</i>
+                  <span>Modular Kitchen</span><i>◆</i>
+                  <span>Modular Wardrobe</span><i>◆</i>
+                  <span>Turnkey Execution</span><i>◆</i>
+                  <span>Full Home Interiors</span><i>◆</i>
+                  <span>Modular Kitchen</span><i>◆</i>
+                  <span>Modular Wardrobe</span><i>◆</i>
+                  <span>Turnkey Execution</span><i>◆</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== INTRO / PHILOSOPHY ===== -->
+      <section class="intro" id="about">
+        <div class="container-fluid">
+          <div class="row gx-5">
+            <div class="col-lg-3">
+              <span class="section-label" data-anim="fade">— Philosophy</span>
+            </div>
+
+            <div class="col-lg-9">
+              <p class="intro__text" data-anim="lines">
+                We believe great interiors are <em class="serif-italic">felt</em>, not just seen. Every project at Interlay begins with a quiet conversation — about how you live, what you love, and the textures that make a space feel like <em class="serif-italic">home</em>. The result is interiors with patience, proportion and personality.
+              </p>
+
+              <div class="intro__stats">
+                <div class="stat" data-anim="fade">
+                  <h3 class="stat__num"><span data-count="120">0</span>+</h3>
+                  <p class="stat__label">Projects delivered across Rajasthan</p>
+                </div>
+                <div class="stat" data-anim="fade">
+                  <h3 class="stat__num"><span data-count="7">0</span>yr</h3>
+                  <p class="stat__label">Of crafting bespoke interiors</p>
+                </div>
+                <div class="stat" data-anim="fade">
+                  <h3 class="stat__num"><span data-count="42">0</span></h3>
+                  <p class="stat__label">Trusted artisans &amp; partners</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== MARQUEE BANNER ===== -->
+      <section class="banner-marquee">
+        <div class="marquee marquee--xl" data-speed="0.3">
+          <div class="marquee__track">
+            <span>Quiet Luxury</span><i>✦</i>
+            <span>Crafted Detail</span><i>✦</i>
+            <span>Timeless Material</span><i>✦</i>
+            <span>Considered Living</span><i>✦</i>
+            <span>Quiet Luxury</span><i>✦</i>
+            <span>Crafted Detail</span><i>✦</i>
+            <span>Timeless Material</span><i>✦</i>
+            <span>Considered Living</span><i>✦</i>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SERVICES (PINNED) ===== -->
+      <section class="services" id="services">
+        <div class="container-fluid">
+          <div class="services__head">
+            <span class="section-label" data-anim="fade">— What we do</span>
+            <h2 class="services__title" data-anim="lines">
+              A studio for the <em class="serif-italic">whole</em> home —<br/>and the rooms in between.
+            </h2>
+          </div>
+        </div>
+
+        <div class="services__list" id="servicesList">
+
+          <article class="service" data-img="new_images/full_home_interiors.png">
+            <div class="container-fluid">
+              <div class="service__row">
+                <span class="service__num">01</span>
+                <h3 class="service__name" data-cursor="view">Full Home Interiors</h3>
+                <p class="service__desc">End-to-end residential design — from concept and 3D visualisation to turnkey execution.</p>
+                <span class="service__arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service" data-img="new_images/modular_kitchen.png">
+            <div class="container-fluid">
+              <div class="service__row">
+                <span class="service__num">02</span>
+                <h3 class="service__name" data-cursor="view">Modular Kitchen</h3>
+                <p class="service__desc">Bespoke kitchens designed around how you cook, host and gather.</p>
+                <span class="service__arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service" data-img="new_images/modular_wordrobe.png">
+            <div class="container-fluid">
+              <div class="service__row">
+                <span class="service__num">03</span>
+                <h3 class="service__name" data-cursor="view">Modular Wardrobe</h3>
+                <p class="service__desc">Storage that disappears into the architecture — quiet, efficient, beautifully detailed.</p>
+                <span class="service__arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="service-preview" id="servicePreview">
+          <img src="" alt="" id="servicePreviewImg" />
+        </div>
+      </section>
+
+      <!-- ===== WORK / PROJECTS HORIZONTAL ===== -->
+      <section class="work" id="work">
+        <div class="container-fluid">
+          <div class="work__head">
+            <div class="work__head-text">
+              <span class="section-label" data-anim="fade">— Selected work</span>
+              <h2 class="work__title" data-anim="lines">
+                Recent <em class="serif-italic">projects</em>,<br/>quietly considered.
+              </h2>
+            </div>
+            <a href="work.html" class="btn-link work__cta" data-cursor="hover">
+              <span>View full archive</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="work__scroller" id="workScroller">
+          <div class="work__track" id="workTrack">
+
+            <article class="project">
+              <div class="project__media">
+                <img src="new_images/Interior_Designs/(1).jpg" alt="The Sandstone Residence" />
+              </div>
+              <div class="project__meta">
+                <span class="project__num">01 / Residential</span>
+                <h3 class="project__title">The Sandstone Residence</h3>
+                <span class="project__loc">Civil Lines, Jaipur</span>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__media">
+                <img src="new_images/Interior_Designs/(2).jpg" alt="Maison Lumière" />
+              </div>
+              <div class="project__meta">
+                <span class="project__num">02 / Residential</span>
+                <h3 class="project__title">Maison Lumière</h3>
+                <span class="project__loc">Vaishali Nagar</span>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__media">
+                <img src="new_images/Interior_Designs/(3).jpg" alt="Atelier Office" />
+              </div>
+              <div class="project__meta">
+                <span class="project__num">03 / Commercial</span>
+                <h3 class="project__title">Atelier Office</h3>
+                <span class="project__loc">C-Scheme</span>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__media">
+                <img src="new_images/Interior_Designs/(4).jpg" alt="Villa Marigold" />
+              </div>
+              <div class="project__meta">
+                <span class="project__num">04 / Residential</span>
+                <h3 class="project__title">Villa Marigold</h3>
+                <span class="project__loc">Mansarovar</span>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__media">
+                <img src="new_images/Modular_Kitchen/AANAND%20JI/AANAND%20JI%20KITCHEN%20VIEW%2001.jpg" alt="Kitchen No. 7" />
+              </div>
+              <div class="project__meta">
+                <span class="project__num">05 / Modular</span>
+                <h3 class="project__title">Kitchen №7</h3>
+                <span class="project__loc">Jagatpura</span>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__media">
+                <img src="new_images/Interior_Designs/(5).jpg" alt="Quietude Café" />
+              </div>
+              <div class="project__meta">
+                <span class="project__num">06 / Hospitality</span>
+                <h3 class="project__title">Quietude Café</h3>
+                <span class="project__loc">Bani Park</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PROCESS ===== -->
+      <section class="process" id="process">
+        <div class="container-fluid">
+          <div class="row gx-5">
+            <div class="col-lg-4">
+              <span class="section-label" data-anim="fade">— How we work</span>
+              <h2 class="process__title" data-anim="lines">
+                Six steps. <br/><em class="serif-italic">One studio.</em>
+              </h2>
+              <p class="process__lead" data-anim="fade">A measured rhythm from first conversation to final styling — designed to keep the work calm and the outcome remarkable.</p>
+            </div>
+
+            <div class="col-lg-8">
+              <div class="process__list">
+                <div class="step" data-anim="step">
+                  <span class="step__num">01</span>
+                  <div class="step__body">
+                    <h3 class="step__title">Discovery</h3>
+                    <p>An unhurried conversation about how you live, what you collect, and the spaces that have moved you.</p>
+                  </div>
+                </div>
+                <div class="step" data-anim="step">
+                  <span class="step__num">02</span>
+                  <div class="step__body">
+                    <h3 class="step__title">Concept &amp; Mood</h3>
+                    <p>Material boards, references and the architectural intent — translated into a clear visual language.</p>
+                  </div>
+                </div>
+                <div class="step" data-anim="step">
+                  <span class="step__num">03</span>
+                  <div class="step__body">
+                    <h3 class="step__title">3D Visualisation</h3>
+                    <p>Walk through every room before construction begins. We refine in pixels — not on site.</p>
+                  </div>
+                </div>
+                <div class="step" data-anim="step">
+                  <span class="step__num">04</span>
+                  <div class="step__body">
+                    <h3 class="step__title">Detailing</h3>
+                    <p>Drawings, joinery, finishes and BOQ — the unsexy spine that holds an honest project together.</p>
+                  </div>
+                </div>
+                <div class="step" data-anim="step">
+                  <span class="step__num">05</span>
+                  <div class="step__body">
+                    <h3 class="step__title">Execution</h3>
+                    <p>One project manager, vetted contractors, weekly site reviews and a calm WhatsApp thread.</p>
+                  </div>
+                </div>
+                <div class="step" data-anim="step">
+                  <span class="step__num">06</span>
+                  <div class="step__body">
+                    <h3 class="step__title">Styling &amp; Handover</h3>
+                    <p>Art, objects, soft furnishings — the final 5% that makes a house feel like yours.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TESTIMONIAL ===== -->
+      <section class="testimonial" id="testimonial">
+        <div class="container-fluid">
+          <span class="section-label" data-anim="fade">— Kind words</span>
+          <blockquote class="testimonial__quote" data-anim="lines">
+            <span class="serif-italic">“</span>Interlay didn’t design a house, they listened us into one. Every corner feels intentional, every material chosen with patience.<span class="serif-italic">”</span>
+          </blockquote>
+          <div class="testimonial__author" data-anim="fade">
+            <div>
+              <h4>Rohan &amp; Aanya Sharma</h4>
+              <span>Homeowners — Civil Lines Residence</span>
+            </div>
+            <div class="testimonial__nav">
+              <button class="t-nav-btn" data-cursor="hover"><i class="bi bi-arrow-left"></i></button>
+              <button class="t-nav-btn" data-cursor="hover"><i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CTA / CONTACT ===== -->
+      <section class="cta" id="contact">
+        <div class="container-fluid">
+          <span class="section-label" data-anim="fade">— Begin</span>
+          <h2 class="cta__title" data-anim="lines">
+            Have a space <br/>in <em class="serif-italic">mind?</em>
+          </h2>
+          <p class="cta__lead" data-anim="fade">Tell us about your home, your office, your café — or just the feeling you’re chasing. We’ll take it from there.</p>
+
+          <a href="mailto:hello@interlay.in" class="cta__mail" data-cursor="hover">
+            <span class="cta__mail-text">hello@interlay.in</span>
+            <span class="cta__mail-icon"><i class="bi bi-arrow-up-right"></i></span>
+          </a>
+
+          <div class="cta__grid">
+            <div>
+              <span class="cta__label">Studio</span>
+              <p>Plot 14, C-Scheme<br/>Jaipur, Rajasthan 302001</p>
+            </div>
+            <div>
+              <span class="cta__label">Phone</span>
+              <p>+91 96807 33040</p>
+            </div>
+            <div>
+              <span class="cta__label">Hours</span>
+              <p>Mon — Sat<br/>10:00 — 19:00 IST</p>
+            </div>
+            <div>
+              <span class="cta__label">Social</span>
+              <p>
+                <a href="#" data-cursor="hover">Instagram</a><br/>
+                <a href="#" data-cursor="hover">Pinterest</a><br/>
+                <a href="#" data-cursor="hover">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="footer__big">interlay</div>
+          <div class="footer__row">
+            <p>© 2026 Interlay Interiors. All rights reserved.</p>
+            <p>Crafted in Jaipur · Built with care</p>
+            <a href="#hero" data-cursor="hover" class="footer__top">Back to top <i class="bi bi-arrow-up"></i></a>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- GSAP Core + Plugins (Free) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+
+  <!-- Custom Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
