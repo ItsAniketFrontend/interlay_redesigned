@@ -4,8 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0e0e0c" />
-  <title>Contact — Interlay Interiors | Begin a Project</title>
-  <meta name="description" content="Tell us about your space — home, office, café, or just the feeling you're chasing. Interlay is a Jaipur-based interior design studio." />
+
+  <!-- ===== SEO ===== -->
+  <title>Contact Us | Interlay Interiors — Interior Designers in Jaipur</title>
+  <meta name="description" content="Get in touch with Interlay Interiors — Jaipur's leading interior design studio. Call +91 9680733040, message us on WhatsApp, or write to hello@interlay.in." />
+  <meta name="keywords" content="contact interlay interiors, interior designer contact jaipur, interlay phone, hello@interlay.in, modular kitchen jaipur contact" />
+  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="noodp, noydir" />
+  <link rel="canonical" href="https://interlay.in/contact-us" />
+
+  <!-- ===== Open Graph ===== -->
+  <meta property="og:title" content="Contact Us | Interlay Interiors — Interior Designers in Jaipur" />
+  <meta property="og:site_name" content="Interlay Interiors" />
+  <meta property="og:url" content="https://interlay.in/contact-us" />
+  <meta property="og:description" content="Get in touch with Interlay Interiors — Jaipur's leading interior design studio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://interlay.in/new_images/banner-1.webp" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,10 +74,10 @@
                     <i class="bi bi-chevron-right"></i>
                   </button>
                   <div class="nav__dropdown nav__dropdown--sub" role="menu">
-                    <a href="index.html#services" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
+                    <a href="modular-kitchen.html" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
                       <span>Modular Kitchen</span>
                     </a>
-                    <a href="index.html#services" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
+                    <a href="modular-wardrobe.html" class="nav__dropdown-link" data-cursor="hover" role="menuitem">
                       <span>Modular Wardrobe</span>
                     </a>
                   </div>
@@ -98,8 +112,8 @@
           </button>
           <div class="mobile-menu__sub">
             <a href="full-home-interiors.html" class="mobile-menu__sub-item">Full Home Interiors</a>
-            <a href="index.html#services" class="mobile-menu__sub-item">Modular Kitchen</a>
-            <a href="index.html#services" class="mobile-menu__sub-item">Modular Wardrobe</a>
+            <a href="modular-kitchen.html" class="mobile-menu__sub-item">Modular Kitchen</a>
+            <a href="modular-wardrobe.html" class="mobile-menu__sub-item">Modular Wardrobe</a>
           </div>
         </div>
         <a href="index.html#process" class="mobile-menu__item">Process</a>
@@ -144,48 +158,36 @@
               <form class="contact-form" id="contactForm" novalidate>
 
                 <div class="field" data-anim="fade">
-                  <label for="name">01. Your name</label>
-                  <input type="text" id="name" name="name" placeholder="First &amp; last" required />
+                  <label for="name">01. Nice to meet you</label>
+                  <input type="text" id="name" name="name" placeholder="Your full name" required />
                   <span class="field__line"></span>
                 </div>
 
                 <div class="field" data-anim="fade">
-                  <label for="email">02. Email address</label>
+                  <label for="email">02. Email Id</label>
                   <input type="email" id="email" name="email" placeholder="you@domain.com" required />
                   <span class="field__line"></span>
                 </div>
 
                 <div class="field" data-anim="fade">
-                  <label for="phone">03. Phone (optional)</label>
+                  <label for="phone">03. Contact Number</label>
                   <input type="tel" id="phone" name="phone" placeholder="+91 ____ ___ ___" />
                   <span class="field__line"></span>
                 </div>
 
                 <div class="field" data-anim="fade">
-                  <label>04. Service type</label>
+                  <label>04. Interested Service</label>
                   <div class="chip-group" id="projectChips">
-                    <button type="button" class="chip" data-cursor="hover" data-value="full-home">Full Home Interiors</button>
                     <button type="button" class="chip" data-cursor="hover" data-value="modular-kitchen">Modular Kitchen</button>
                     <button type="button" class="chip" data-cursor="hover" data-value="modular-wardrobe">Modular Wardrobe</button>
-                    <button type="button" class="chip" data-cursor="hover" data-value="other">Other</button>
+                    <button type="button" class="chip" data-cursor="hover" data-value="home-interior">Home Interior</button>
+                    <button type="button" class="chip" data-cursor="hover" data-value="commercial-interior">Commercial Interior</button>
                   </div>
                   <input type="hidden" name="projectType" id="projectType" />
                 </div>
 
                 <div class="field" data-anim="fade">
-                  <label>05. Approximate budget</label>
-                  <div class="chip-group" id="budgetChips">
-                    <button type="button" class="chip" data-cursor="hover" data-value="under-10">Under ₹10L</button>
-                    <button type="button" class="chip" data-cursor="hover" data-value="10-25">₹10L – ₹25L</button>
-                    <button type="button" class="chip" data-cursor="hover" data-value="25-50">₹25L – ₹50L</button>
-                    <button type="button" class="chip" data-cursor="hover" data-value="50-100">₹50L – ₹1Cr</button>
-                    <button type="button" class="chip" data-cursor="hover" data-value="100+">₹1Cr+</button>
-                  </div>
-                  <input type="hidden" name="budget" id="budget" />
-                </div>
-
-                <div class="field" data-anim="fade">
-                  <label for="message">06. About the project</label>
+                  <label for="message">05. Your Concern</label>
                   <textarea id="message" name="message" rows="5" placeholder="Tell us about the space, the people who live there, the feeling you're after — or anything you'd like us to know."></textarea>
                   <span class="field__line"></span>
                 </div>
@@ -220,41 +222,48 @@
 
                 <div class="contact-card" data-anim="step">
                   <span class="cta__label">Visit the studio</span>
-                  <h3 class="contact-card__title">Plot 14, C-Scheme<br/>Jaipur, Rajasthan 302001</h3>
-                  <a href="#" class="btn-link" data-cursor="hover">
+                  <h3 class="contact-card__title">Shop No. 274,<br/>Gangaram Nagar,<br/>New Aatish Market,<br/>Shanthi Nagar, Mansarovar,<br/>Jaipur, Rajasthan 302020</h3>
+                  <p class="contact-card__sub">Mon — Sat · 10:30 — 20:00</p>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=26.8783675,75.7596791" target="_blank" rel="noopener" class="btn-link" data-cursor="hover">
                     <span>Open in Maps</span>
                     <i class="bi bi-arrow-up-right"></i>
                   </a>
                 </div>
 
-                <div class="contact-card" data-anim="step">
+                <a href="tel:+919680733040" class="contact-card contact-card--link" data-anim="step" data-cursor="hover">
                   <span class="cta__label">Speak to us</span>
                   <h3 class="contact-card__title">+91 96807 33040</h3>
-                  <p class="contact-card__sub">Mon — Sat · 10:00 — 19:00 IST</p>
-                </div>
+                  <p class="contact-card__sub">Tap to call · We pick up our own phone.</p>
+                </a>
 
-                <div class="contact-card" data-anim="step">
+                <a href="https://wa.me/919680733040" target="_blank" rel="noopener" class="contact-card contact-card--link contact-card--whatsapp" data-anim="step" data-cursor="hover">
+                  <span class="cta__label"><i class="bi bi-whatsapp"></i> WhatsApp</span>
+                  <h3 class="contact-card__title">+91 96807 33040</h3>
+                  <p class="contact-card__sub">Quickest way to share floor plans &amp; references.</p>
+                </a>
+
+                <a href="mailto:hello@interlay.in" class="contact-card contact-card--link" data-anim="step" data-cursor="hover">
                   <span class="cta__label">Write to us</span>
                   <h3 class="contact-card__title">hello@interlay.in</h3>
-                  <p class="contact-card__sub">For new projects, press, &amp; collaborations</p>
-                </div>
+                  <p class="contact-card__sub">For new projects, press, &amp; collaborations.</p>
+                </a>
 
                 <div class="contact-social" data-anim="step">
                   <span class="cta__label">Follow along</span>
                   <div class="contact-social__list">
-                    <a href="#" data-cursor="hover">
+                    <a href="https://www.instagram.com/interlayinteriors/" target="_blank" rel="noopener" data-cursor="hover">
                       <i class="bi bi-instagram"></i>
                       <span>Instagram</span>
                       <i class="bi bi-arrow-up-right ms-auto"></i>
                     </a>
-                    <a href="#" data-cursor="hover">
-                      <i class="bi bi-pinterest"></i>
-                      <span>Pinterest</span>
+                    <a href="https://www.facebook.com/Interlay/" target="_blank" rel="noopener" data-cursor="hover">
+                      <i class="bi bi-facebook"></i>
+                      <span>Facebook</span>
                       <i class="bi bi-arrow-up-right ms-auto"></i>
                     </a>
-                    <a href="#" data-cursor="hover">
-                      <i class="bi bi-linkedin"></i>
-                      <span>LinkedIn</span>
+                    <a href="https://www.youtube.com/channel/UCENV4EpV6YRajAcVXZtlYUQ" target="_blank" rel="noopener" data-cursor="hover">
+                      <i class="bi bi-youtube"></i>
+                      <span>YouTube</span>
                       <i class="bi bi-arrow-up-right ms-auto"></i>
                     </a>
                   </div>
@@ -272,20 +281,20 @@
         <div class="container-fluid">
           <span class="section-label" data-anim="fade">— Find us</span>
           <h2 class="map-section__title" data-anim="lines">
-            A short walk from <em class="serif-italic">Albert Hall.</em>
+            Studio in <em class="serif-italic">Mansarovar,</em> Jaipur.
           </h2>
         </div>
         <div class="map-section__embed">
           <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=75.788%2C26.905%2C75.832%2C26.925&layer=mapnik&marker=26.9152%2C75.8090"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=75.7497%2C26.8684%2C75.7697%2C26.8884&layer=mapnik&marker=26.8783675%2C75.7596791"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Interlay studio map"></iframe>
+            title="Interlay studio map — Mansarovar, Jaipur"></iframe>
           <div class="map-pin">
             <div class="map-pin__dot"></div>
             <div class="map-pin__label">
               <span class="cta__label">The Studio</span>
-              <p>Plot 14, C-Scheme<br/>Jaipur · 302001</p>
+              <p>Shop No. 274,<br/>Mansarovar, Jaipur · 302020</p>
             </div>
           </div>
         </div>
@@ -390,6 +399,13 @@
 
     </main>
   </div>
+  <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+  <a href="https://wa.me/919680733040" target="_blank" rel="noopener" class="wa-float" aria-label="Chat with Interlay on WhatsApp" data-cursor="hover">
+    <i class="bi bi-whatsapp"></i>
+    <span class="wa-float__tooltip">Chat on WhatsApp</span>
+  </a>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
